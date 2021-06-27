@@ -127,15 +127,15 @@ nav {
   );
 }
 
+#about {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .section-about {
   padding: 3rem 1.5rem 0;
   display: grid;
   gap: 2rem;
-}
-
-#about {
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .banner-2 {
@@ -166,10 +166,28 @@ nav {
 }
 
 #about .divider-2 {
+  margin-top: 3rem;
   height: 1px;
   background: linear-gradient(
     to left,
     rgba(105, 185, 157, 0),
     rgba(105, 185, 157, 1)
   );
+}
+
+#section {
+  background-color: #f9f9f9;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.section-services {
+  padding: 5rem 1.5rem 0;
+  display: grid;
+  gap: 1.5rem;
+}
+
+#services .texto span {
+  color: #69b99d;
+  font-weight: bold;
 }
