@@ -165,7 +165,7 @@ nav {
   font: 300 1rem "Poppins", sans-serif;
 }
 
-#about .divider-2 {
+.divider-2 {
   margin-top: 3rem;
   height: 1px;
   background: linear-gradient(
@@ -225,11 +225,73 @@ h3 {
   margin-bottom: 2.5em;
 }
 
-/* #services .divider-1 {
-  height: 1px;
-  background: linear-gradient(
-    to right,
-    rgba(105, 185, 157, 0),
-    rgba(105, 185, 157, 1)
-  );
-} */
+.section-testimonials {
+  padding: 5rem 0rem 2rem;
+}
+
+.testimonials {
+  margin: 0;
+  width: 100%;
+  height: 18rem;
+}
+
+.cardTestimonials {
+  padding: 1.5rem;
+}
+
+blockquote {
+  margin: 5px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+#testimonials .texto {
+  margin: 0;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  font: 300 1rem "Dm Sans", sans-serif;
+  color: #0f241d;
+  line-height: 26px;
+}
+
+#testimonials h2 {
+  margin-bottom: 2.5rem;
+  padding: 0 1.5rem;
+}
+
+cite {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font: 300 1rem "Dm Sans", sans-serif;
+}
+
+cite img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  border-radius: 1000px;
+}
+
+.swiper-slide {
+  height: auto;
+  padding: 1px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  margin: 0.25rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #38b47f;
+}
