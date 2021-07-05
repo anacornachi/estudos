@@ -11,6 +11,10 @@ body {
   overflow-x: hidden;
 }
 
+html.show {
+  overflow-y: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -27,6 +31,76 @@ nav {
   justify-content: space-between;
   padding: 0 1.5rem;
   background-color: #f9f9f9;
+}
+
+ul li a {
+  color: #0f241d;
+}
+
+nav .menu ul li a:hover,
+nav .menu ul li a.active {
+  transition: 0.15s;
+  border-bottom: solid 3px #69b99d;
+}
+
+.menu-icon {
+  background: url("../assets/images/menu.svg");
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.menu-icon.show {
+  background: url("../assets/images/close.svg");
+  z-index: 2;
+}
+
+.menu {
+  display: none;
+}
+
+.menu.show {
+  display: block;
+  top: 0;
+  left: 0;
+  background: #f9f9f9;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.menu.show ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu.show ul li {
+  font: 700 1.87rem "Poppins", sans-serif;
+  line-height: 6rem;
+  color: #0f241d;
+  text-decoration: none;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .menu.show {
+    background: red;
+  }
+}
+
+li {
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
 }
 
 .logo {
@@ -241,6 +315,7 @@ h3 {
 
 blockquote {
   margin: 5px;
+  height: 17rem;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -377,4 +452,12 @@ footer {
   padding: 20px 20px 0 0;
   display: flex;
   justify-content: space-between;
+}
+
+.social img {
+  cursor: pointer;
+}
+
+/* Responsividade  */
+@media (min-width: 992px) {
 }
