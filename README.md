@@ -1,1 +1,0 @@
-Projeto inicializado e editado

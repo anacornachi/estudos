@@ -3,7 +3,13 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 300 1rem "Noto Sans SC", sans-serif;
+  scroll-behavior: smooth;
+  font: 300 1rem "Noto Sans SC", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .navbar {
@@ -17,4 +23,69 @@ body {
 .navbar-nav a:hover {
   border-bottom: 1px solid #121212;
   font-weight: 500;
+}
+
+.btn {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#hero {
+  height: 745px;
+  background-color: #121212;
+  color: white;
+}
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    padding: 79px;
+  }
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 64px;
+}
+
+h2 span {
+  background: #fced65;
+  color: #121212;
+}
+
+#hero p {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.partner {
+  max-width: 129px;
+  height: 72.85px;
+  border-radius: 15px;
+  background: white;
+  margin-right: 15px;
+  padding: 30px;
+}
+
+.gold-circle {
+  right: 0;
+  z-index: 0;
+  top: -20px;
+}
+
+.yellow-circle {
+  left: 0;
+  z-index: 0;
+  bottom: 250px;
+  left: 106px;
+}
+
+.silver-circle {
+  z-index: 0;
+  bottom: -11px;
+  right: 200px;
+}
+
+.phone {
+  z-index: 1;
+  max-width: 100%;
 }
