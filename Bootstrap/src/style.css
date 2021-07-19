@@ -89,36 +89,12 @@ h2 span {
   right: 100px;
 }
 
-@media (min-width: 700px) {
-  .golden-circle {
-    right: 0;
-    z-index: 0;
-    top: -20px;
-  }
-  .yellow-circle {
-    left: 0;
-    z-index: 0;
-    bottom: 250px;
-    left: 106px;
-  }
-  .silver-circle {
-    z-index: 0;
-    bottom: -11px;
-    right: 200px;
-  }
-}
-
 .phone {
   z-index: 1;
   align-items: center;
   width: 100vw;
   transform: scale(0.8, 0.8);
 }
-
-/* .phone {
-  z-index: 1;
-  max-width: 100%;
-} */
 
 /* FIM DO HERO  */
 
@@ -139,12 +115,6 @@ h2 span {
 #about-us img {
   margin-top: 1.4rem;
   max-width: 100%;
-  /* padding-top: 15px;
-  padding-left: 40px;
-  padding-right: 40px;
-  z-index: 1;
-  margin-bottom: 5px;
-  height: 100vw; */
 }
 
 .titulo {
@@ -173,8 +143,6 @@ i.material-icons {
   width: 100vw;
 }
 
-/* FIM DA SECTION SERVICES */
-
 .teste-1 {
   max-height: 710px;
   position: relative;
@@ -197,3 +165,9 @@ i.material-icons {
   z-index: -1;
   transform: scale(0.5, 0.5);
 }
+
+/* FIM DA SECTION SERVICES */
+
+/* INICIO DA SECTION OUR STORY */
+
+/* FIM DA SECTION OUR STORY */
