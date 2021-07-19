@@ -172,3 +172,26 @@ i.material-icons {
 }
 
 /* FIM DA SECTION SERVICES */
+
+.teste-1 {
+  max-height: 710px;
+  position: relative;
+}
+
+.dots-decor-1 {
+  display: flex;
+  position: absolute;
+  top: -40px;
+  right: 0;
+  z-index: -1;
+  transform: scale(0.5, 0.5);
+}
+
+.dots-decor-2 {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: -60px;
+  z-index: -1;
+  transform: scale(0.5, 0.5);
+}
