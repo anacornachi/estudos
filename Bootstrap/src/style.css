@@ -12,6 +12,12 @@ a {
   color: #ffffff;
 }
 
+p {
+  font-size: 12px;
+}
+
+/* INICIO DO HEADER */
+
 .navbar {
   height: 100px;
 }
@@ -30,19 +36,17 @@ a {
   font-weight: 500;
 }
 
-#hero {
-  height: 745px;
+/* FIM DO HEADER */
+
+/* INICIO DO HERO */
+
+.hero {
+  min-height: 745px;
   background-color: #121212;
   color: white;
 }
 
-@media (min-width: 1200px) {
-  .container-fluid {
-    padding: 79px;
-  }
-}
-
-h2 {
+.titulo-hero {
   font-size: 48px;
   line-height: 64px;
 }
@@ -66,26 +70,105 @@ h2 span {
   padding: 30px;
 }
 
-.gold-circle {
-  right: 0;
+.golden-circle {
+  display: flex;
   z-index: 0;
-  top: -20px;
+  width: 100vw;
+  padding-left: 60px;
 }
 
 .yellow-circle {
-  left: 0;
   z-index: 0;
-  bottom: 250px;
-  left: 106px;
+  left: 1px;
+  bottom: 260px;
 }
 
 .silver-circle {
   z-index: 0;
-  bottom: -11px;
-  right: 200px;
+  bottom: 40px;
+  right: 100px;
+}
+
+@media (min-width: 700px) {
+  .golden-circle {
+    right: 0;
+    z-index: 0;
+    top: -20px;
+  }
+  .yellow-circle {
+    left: 0;
+    z-index: 0;
+    bottom: 250px;
+    left: 106px;
+  }
+  .silver-circle {
+    z-index: 0;
+    bottom: -11px;
+    right: 200px;
+  }
 }
 
 .phone {
   z-index: 1;
-  max-width: 100%;
+  align-items: center;
+  width: 100vw;
+  transform: scale(0.8, 0.8);
 }
+
+/* .phone {
+  z-index: 1;
+  max-width: 100%;
+} */
+
+/* FIM DO HERO  */
+
+/* INICIO DO ABOUT-US */
+
+#about-us {
+  min-height: 600px;
+}
+
+.contorno-amarelo {
+  border: yellow 10px solid;
+  content: " ";
+  width: 85%;
+  height: 180px;
+  z-index: 0;
+}
+
+#about-us img {
+  padding-top: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  z-index: 1;
+  margin-bottom: 5px;
+  height: 100vw;
+}
+
+.titulo {
+  margin-top: 50%;
+  border-bottom: #dedede 1px solid;
+}
+
+.text-about-us {
+  width: 100%;
+  height: 100%;
+}
+
+/* INICIO DA SECTION SERVICES */
+
+i {
+  background: #f0f0f0;
+  padding: 6px;
+}
+
+i.material-icons {
+  width: 2.3rem;
+  height: 2.3rem;
+}
+
+.texto {
+  width: 100vw;
+}
+
+/* FIM DA SECTION SERVICES */
