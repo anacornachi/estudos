@@ -43,12 +43,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="text-center ms-lg-4 nav-link" href="#">Home</a>
-            <a class="text-center ms-lg-4 nav-link" href="#">About us</a>
-            <a class="text-center ms-lg-4 nav-link" href="#">Services</a>
-            <a class="text-center ms-lg-4 nav-link" href="#">Success story</a>
-            <a class="text-center ms-lg-4 nav-link" href="#">Testimonial</a>
-            <a class="text-center ms-lg-4 nav-link" href="#">Our Team</a>
+            <a class="text-center ms-lg-4 nav-link" href="#hero">Home</a>
+            <a class="text-center ms-lg-4 nav-link" href="#about-us"
+              >About us</a
+            >
+            <a class="text-center ms-lg-4 nav-link" href="#services"
+              >Services</a
+            >
+            <a class="text-center ms-lg-4 nav-link" href="#our-story"
+              >Success story</a
+            >
+            <a class="text-center ms-lg-4 nav-link" href="#testimonials"
+              >Testimonial</a
+            >
+            <a class="text-center ms-lg-4 nav-link" href="#team">Our Team</a>
             <button
               class="ms-lg-5 btn btn-dark px-4 rounded-pill"
               type="submit"
@@ -62,11 +70,13 @@
 
     <!-- SECTION HERO  -->
 
-    <section class="hero">
-      <div class="container" id="hero">
-        <div class="flex-row py-5">
-          <div class="col-12 col-md-6 mb-5 mb-md-0 d-flex flex-column">
-            <h2 class="titulo-hero mt-3 mb-4">
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row py-5 align-items-center">
+          <div class="col-12 col-md-6 mb-5 mb-md-0">
+            <h2
+              class="titulo-hero mb-4 text-align-lg-center d-flex flex-column"
+            >
               Authentic content for your <span>social media</span> presence?
             </h2>
             <p class="mb-5">
@@ -75,20 +85,19 @@
               and brand building.
             </p>
             <div class="d-flex align-items-start">
-              <button
-                class="btn btn-light px-5 py-3 rounded-3 mb-5"
-                type="submit"
-              >
+              <button class="btn btn-light px-5 py-3 rounded-3" type="submit">
                 Get Started
               </button>
             </div>
-            <a class="mb-4" href="#">Also trusted by</a>
+            <p class="my-5">Also trusted by</p>
             <div
               class="
                 partners
                 d-flex
-                align-items-end
-                justify-content-md-start justify-content-center
+                flex-wrap
+                justify-content-around
+                justify-content-md-start
+                justify-content-center
                 flex-wrap
               "
             >
@@ -103,7 +112,7 @@
                   alt="logo microsoft"
                 />
               </div>
-              <div class="partner d-flex align-items-center mt-4 mt-md-2">
+              <div class="partner d-flex align-items-center">
                 <img src="./src/assets/images/oyo.svg" alt="logo oyo" />
               </div>
             </div>
@@ -113,7 +122,9 @@
               col-12 col-md-6
               d-flex
               position-relative
-              justify-content-center
+              justify-content-center justify-content-md-end
+              flex-column
+              mx-auto
             "
           >
             <img
@@ -132,7 +143,7 @@
               alt="circulo amarelo"
             />
             <img
-              class="phone"
+              class="phone align-items-center ms-md-5"
               src="./src/assets/images/iphone.svg"
               alt="iphone"
             />
@@ -146,9 +157,17 @@
     <!-- INICIO DA SECTION ABOUT US -->
 
     <section class="about-us">
-      <div class="container" id="about-us">
-        <div class="row">
-          <div class="col-12 col-md-6 position-relative p-5">
+      <div class="container d-flex align-items-md-center" id="about-us">
+        <div class="d-flex flex-column-reverse flex-md-row">
+          <div
+            class="
+              col-12 col-md-6
+              position-relative
+              d-flex
+              justify-content-center
+              p-5
+            "
+          >
             <div class="contorno-amarelo"></div>
             <img
               class=""
@@ -165,8 +184,9 @@
                 justify-content-center
               "
             >
-              <h2 class="titulo mb-4">About us</h2>
-              <p class="text-about-us mb-4">
+              <h2 class="mt-4">About us</h2>
+              <hr />
+              <p class="text-about-us my-4">
                 <b>Minima</b> is a template social agency that offers
                 full-service social media solutions. <br /><br />
 
@@ -188,13 +208,12 @@
     <!-- INCIO DA SECTION SERVICES -->
 
     <section class="services">
-      <div class="container" id="services">
+      <div class="container mb-5 my-md-5" id="services">
         <div class="row">
-          <!-- COLUNA 1 -->
-
           <div class="d-flex flex-column col-12 col-md-6">
-            <h2 class="titulo my-4">Services we provide</h2>
-            <p class="mb-4">
+            <h2 class="mt-4 mt-md-0">Services we provide</h2>
+            <hr />
+            <p class="my-4">
               We will help a client's problems to provide their social media
               performance
             </p>
@@ -225,7 +244,15 @@
             </div>
 
             <div class="flex-row">
-              <div class="services-categories d-flex flex-row mb-3">
+              <div
+                class="
+                  services-categories
+                  d-flex
+                  flex-row
+                  mb-3
+                  justify-content-center
+                "
+              >
                 <i
                   class="
                     material-icons
@@ -299,12 +326,21 @@
               </div>
             </div>
           </div>
-          <!-- FIM DA COLUNA 1  -->
 
           <!-- AQUI COMEÇAM AS IMAGENS -->
 
           <div class="teste-1 col-12 col-md-6">
-            <div class="teste d-flex flex-column h-100">
+            <div
+              class="
+                teste
+                d-flex
+                flex-column
+                h-100
+                justify-content-center
+                align-items-center
+                mt-3 mt-md-0
+              "
+            >
               <img
                 class="dots-decor-1"
                 src="./src/assets/images/dot-decor.svg"
@@ -342,7 +378,7 @@
                 </figure>
                 <figure class="col-8">
                   <img
-                    class="w-100"
+                    class="mw-100"
                     src="./src/assets/images/image-4.svg"
                     alt="homem em pé fazendo uma apresentação"
                   />
@@ -355,10 +391,302 @@
       </div>
     </section>
 
-    <section class="our-story"></section>
-    <img src="./src/assets/images/story-img.svg" alt="" />
-    <h2></h2>
-    <p></p>
+    <!-- INICIO SECTION OUR STORY -->
+
+    <section class="container mb-5 my-md-5" id="our-story">
+      <h2 class="">Our success story</h2>
+      <hr />
+      <div class="d-flex flex-column-reverse flex-md-row">
+        <div class="d-flex flex-column col-12 col-md-6 position-relative">
+          <div class="yellow-corner position-absolute"></div>
+          <img
+            class="col-12 col-md-7 mw-100 pt-3"
+            src="./src/assets/images/story-img.svg"
+            alt=""
+          />
+          <img
+            class="dots-decor-3"
+            src="./src/assets/images/dot-decor.svg"
+            alt="pontinhos"
+          />
+        </div>
+
+        <div class="col-12 col-md-6 mw-100">
+          <p class="mw-100">
+            Develop a website by finding a product identity that has value and
+            branding to become a characteristic of a company.
+          </p>
+        </div>
+        <div
+          class="d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="milestone mt-3">
+            <h6 class="milestone-number">1000</h6>
+            <p class="milestone-text d-flex justify-content-center">
+              Project complete
+            </p>
+          </div>
+          <div class="milestone mt-3">
+            <h6 class="milestone-number">235</h6>
+            <p class="milestone-text d-flex justify-content-center">Our team</p>
+          </div>
+          <div class="milestone mt-3">
+            <h6 class="milestone-number">1100</h6>
+            <p class="milestone-text d-flex justify-content-center">
+              Our Client
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIM SECTION OUR STORY -->
+
+    <!-- INICIO DA SECTION OUR TEAM -->
+    <section class="container" id="team">
+      <div class="">
+        <h2 class="d-flex align-items-center justify-content-center my-5">
+          Our Awesome Team
+        </h2>
+        <div
+          class="
+            card-wrapper
+            d-flex
+            flex-wrap
+            justify-content-center justify-content-md-between
+            mx-auto
+          "
+        >
+          <!-- COMPONENTES -->
+
+          <div
+            class="
+              team-card
+              d-flex
+              flex-column
+              align-items-center
+              justify-content-center
+            "
+          >
+            <img
+              class="mb-3"
+              src="./src/assets/images/worker-1.svg"
+              alt="imagem de um homem na diagonal"
+            />
+            <p class="mb-2">Hi! My name is</p>
+            <h5 class="mb-2">Shoo Thar Mien</h5>
+            <p>Senior UX Designer</p>
+          </div>
+
+          <div
+            class="
+              team-card
+              d-flex
+              flex-column
+              align-items-center
+              justify-content-center
+            "
+          >
+            <img
+              class="mb-3"
+              src="./src/assets/images/worker-2.svg"
+              alt="mulher olhando para a foto"
+            />
+            <p class="mb-2">Hi! My name is</p>
+            <h5 class="mb-2">Shoo Prat Mhan</h5>
+            <p>Senior IxD</p>
+          </div>
+
+          <div
+            class="
+              team-card
+              d-flex
+              flex-column
+              align-items-center
+              justify-content-center
+            "
+          >
+            <img
+              class="mb-3"
+              src="./src/assets/images/worker-3.svg"
+              alt="mulher olhando para a foto"
+            />
+            <p class="mb-2">Hi! My name is</p>
+            <h5 class="mb-2">Shoo Yhan Tho</h5>
+            <p>Creative Director</p>
+          </div>
+
+          <div
+            class="
+              team-card
+              d-flex
+              flex-column
+              align-items-center
+              justify-content-center
+            "
+          >
+            <img
+              class="mb-3"
+              src="./src/assets/images/worker-4.svg"
+              alt="mulher olhando para a foto"
+            />
+            <p class="mb-2">Hi! My name is</p>
+            <h5 class="mb-2">Shoo Bro Tho</h5>
+            <p>Motion Designer</p>
+          </div>
+
+          <div
+            class="
+              team-card
+              d-flex
+              flex-column
+              align-items-center
+              justify-content-center
+            "
+          >
+            <img
+              class="mb-3"
+              src="./src/assets/images/worker-5.svg"
+              alt="mulher olhando para a foto"
+            />
+            <p class="mb-2">Hi! My name is</p>
+            <h5 class="mb-2">Shoo Mhar No</h5>
+            <p>Illustrator</p>
+          </div>
+          <div
+            class="
+              team-card
+              d-flex
+              flex-column
+              align-items-center
+              justify-content-center
+            "
+          >
+            <img
+              class="mb-3"
+              src="./src/assets/images/worker-6.svg"
+              alt="mulher olhando para a foto"
+            />
+            <p class="mb-2">Hi! My name is</p>
+            <h5 class="mb-2">Shoo Mhan Tho</h5>
+            <p>Senior UX Researcher</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIM DA SECTION OUR TEAM -->
+
+    <!-- TESTIMONIALS -->
+    <section class="container" id="testimonials">
+      <h2>What our customer says</h2>
+
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="
+                d-flex
+                flex-column
+                justify-content-center
+                align-items-center
+                p-5
+                text-center
+              "
+            >
+              <img
+                class="mb-5"
+                src="./src/assets/images/deponent.svg"
+                alt="imagem de quem deu depoimento. na imagem, uma mulher"
+              />
+              <p>
+                ReachCircle is the friendliest and most efficient company I have
+                ever used. The whole thing takes time to introduce the product
+                and as a result puts forward only the best opportunities that
+                really suit you. they help from start to finish to create a
+                great product identity for your company
+              </p>
+              <p class="costumer-name">Shalima Hayden</p>
+              <p>Product Designer</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="
+                d-flex
+                flex-column
+                justify-content-center
+                align-items-center
+                p-5
+                text-center
+              "
+            >
+              <img
+                class="mb-5"
+                src="./src/assets/images/deponent.svg"
+                alt="imagem de quem deu depoimento. na imagem, uma mulher"
+              />
+              <p>
+                Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores
+                não altera o pão duris. Viva Forevis aptent taciti sociosqu ad
+                litora torquent. Atirei o pau no gatis, per gatis num morreus.
+                Leite de capivaris, leite de mula manquis sem cabeça.
+              </p>
+              <p class="costumer-name">Mussum</p>
+              <p>Gente finis</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="
+                d-flex
+                flex-column
+                justify-content-center
+                align-items-center
+                p-5
+                text-center
+              "
+            >
+              <img
+                class="mb-5"
+                src="./src/assets/images/deponent.svg"
+                alt="imagem de quem deu depoimento. na imagem, uma mulher"
+              />
+              <p>
+                ReachCircle is the friendliest and most efficient company I have
+                ever used. The whole thing takes time to introduce the product
+                and as a result puts forward only the best opportunities that
+                really suit you. they help from start to finish to create a
+                great product identity for your company
+              </p>
+              <p class="costumer-name">Shalima Hayden</p>
+              <p>Product Designer</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- TESTIMONIALS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
