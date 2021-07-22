@@ -320,22 +320,22 @@ i.material-icons {
     transform: scale(0.7);
   }
   .dots-decor-1 {
-    top: 79px;
-    right: 6px;
+    top: 78px;
+    right: 5px;
     transform: scale(0.7);
   }
 }
 
 @media (min-width: 992px) {
   .dots-decor-1 {
-    top: 3px;
+    top: -9px;
     right: 25px;
-    transform: scale(0.8);
+    transform: scale(0.7);
   }
   .dots-decor-2 {
-    bottom: 31px;
-    left: 0px;
-    transform: scale(0.8);
+    bottom: 24px;
+    left: -5px;
+    transform: scale(0.7);
   }
   .teste-1 {
     padding-left: 50px;
@@ -406,6 +406,59 @@ i.material-icons {
 
 .milestone-text {
   font-weight: bold;
+}
+
+@media (min-width: 576px) {
+  .dots-decor-3 {
+    top: 130px;
+    right: -78px;
+    transform: scale(0.4);
+  }
+}
+
+@media (min-width: 768px) {
+  .milestone-number {
+    font-size: 35px;
+  }
+  .milestone-text {
+    font-size: 10px;
+  }
+  .image-story {
+    height: 100%;
+    width: 100%;
+  }
+  .dots-decor-3 {
+    top: 101px;
+    right: -86px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dots-decor-3 {
+    top: 125px;
+    right: -74px;
+    transform: scale(0.5);
+  }
+  .milestone-number {
+    font-size: 40px;
+  }
+  .milestone-text {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .dots-decor-3 {
+    top: 165px;
+    right: -74px;
+    transform: scale(0.5);
+  }
+  .milestone-number {
+    font-size: 45px;
+  }
+  .milestone-text {
+    font-size: 20px;
+  }
 }
 /* FIM DA SECTION OUR STORY */
 
