@@ -480,11 +480,93 @@ i.material-icons {
   font-weight: bold;
 }
 
+.carousel-item {
+  max-width: 450px;
+}
+
 .carousel-control-prev,
 .carousel-control-next {
   background: rgba(0, 0, 0, 1);
   border-radius: 10px;
-  width: 56px;
-  height: 56px;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  top: 50%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  height: 1rem;
+}
+
+.cardTestimonials {
+  max-width: 800px;
+  min-height: 400px;
+}
+
+.carousel-indicators [data-bs-target] {
+  border-radius: 100%;
+  height: 10px;
+  background: #bdbdbd;
   opacity: 1;
 }
+
+div.carousel-indicators {
+  position: absolute;
+}
+
+.carousel-indicators button.active {
+  background-color: black;
+}
+
+/* CONTACT */
+
+form {
+  max-width: 50%;
+  min-height: 500px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  height: 56px;
+  background-color: #f7f8f9;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  background-color: #f7f8f9;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-weight: lighter;
+  color: #bdbdbd;
+}
+
+.dots-decor-4 {
+  display: flex;
+  position: absolute;
+  bottom: -267px;
+  left: -73px;
+  z-index: -1;
+  transform: scale(0.3, 0.3);
+}
+
+#contact figure {
+  max-height: 376px;
+}
+
+/* FIM DO CONTACT */
