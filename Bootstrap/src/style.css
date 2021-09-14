@@ -41,9 +41,9 @@ p {
 /* INICIO DO HERO */
 
 #hero {
-  min-height: 745px;
   background-color: #121212;
   color: white;
+  min-height: 745px;
 }
 
 .titulo-hero {
@@ -58,32 +58,32 @@ h2 span {
 }
 
 .partners {
-  max-width: 500px;
   display: grid;
   gap: 20px;
+  max-width: 500px;
 }
 
 .partner {
-  max-width: 129px;
-  height: 72.85px;
-  border-radius: 15px;
   background: white;
+  border-radius: 15px;
+  height: 72.85px;
+  max-width: 129px;
   padding: 30px;
 }
 
 .golden-circle {
   display: flex;
-  z-index: 0;
-  max-width: 100vw;
-  transform: scale(0.7, 0.7);
-  top: -55px;
   left: 35px;
+  max-width: 100vw;
+  top: -55px;
+  transform: scale(0.7, 0.7);
+  z-index: 0;
 }
 
 .yellow-circle {
-  z-index: 0;
-  left: -5px;
   bottom: 240px;
+  left: -5px;
+  z-index: 0;
 }
 
 .silver-circle {
